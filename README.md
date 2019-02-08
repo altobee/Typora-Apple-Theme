@@ -5,3 +5,5 @@ This theme is based on the original "Github Theme" which is included in Typora. 
 For the moment it's enough to change the fonts ;-)
 
 ![apple.png](http://altobee.de/apple/apple.png)
+
+You can get Typora here: http://typora.io
