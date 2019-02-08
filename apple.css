@@ -1,11 +1,6 @@
 :root {
-    --side-bar-bg-color: #24292e;
+    --side-bar-bg-color: #fafafa;
     --control-text-color: #777;
-    --active-file-bg-color: #384047;
-    --control-text-hover-color: #aaa;
-    --item-hover-bg-color: #384047;
-    --text-color: #c0c0c0;
-    --bg-color: #f8f8ff;
 }
 
 @font-face {
@@ -49,9 +44,7 @@ html {
 
 body {
     font-family: "San Francisco Display Thin";
-    /*color: rgb(51, 51, 51);*/
-    color: #313133;
-    background-color: #f8f8ff;
+    color: rgb(51, 51, 51);
     line-height: 1.6;
 }
 
@@ -64,14 +57,6 @@ body {
 #write > ul:first-child,
 #write > ol:first-child{
     margin-top: 30px;
-}
-
-#recent-file-panel tbody tr:nth-child(2n-1) {
-    background-color: #24292e;
-}
-
-table, input {
-    border: 1px solid #aaa !important;
 }
 
 a {
@@ -96,7 +81,6 @@ h3:hover a.anchor,
 h4:hover a.anchor,
 h5:hover a.anchor,
 h6:hover a.anchor {
-    /*background: url("../../images/modules/styleguide/para.png") no-repeat 10px center;*/
     text-decoration: none;
 }
 h1 tt,
@@ -147,7 +131,7 @@ h5 {
 }
 h6 {
    font-size: 1em;
-    color: #313133;
+    color: #777;
 }
 p,
 blockquote,
@@ -165,7 +149,7 @@ hr {
     height: 2px;
     padding: 0;
     margin: 16px 0;
-    background-color: #313133;
+    background-color: #e7e7e7;
     border: 0 none;
     overflow: hidden;
     box-sizing: content-box;
@@ -187,9 +171,9 @@ ol:last-child {
     margin-bottom: 0;
 }
 blockquote {
-    border-left: 4px solid #384047;
+    border-left: 4px solid #dfe2e5;
     padding: 0 15px;
-    color: #999;
+    color: #777777;
 }
 blockquote blockquote {
     padding-right: 0;
@@ -197,27 +181,26 @@ blockquote blockquote {
 table {
     padding: 0;
     word-break: initial;
-    background-color: var(--bg-color);
 }
 table tr {
-    border-top: 1px solid #313133;
+    border-top: 1px solid #dfe2e5;
     margin: 0;
     padding: 0;
 }
 table tr:nth-child(2n),
 thead {
-    background-color: #c6c6cc;
+    background-color: #f8f8f8;
 }
 table tr th {
     font-weight: bold;
-    border: 1px solid #c6c6cc;
+    border: 1px solid #dfe2e5;
     border-bottom: 0;
     text-align: left;
     margin: 0;
     padding: 6px 13px;
 }
 table tr td {
-    border: 1px solid #;
+    border: 1px solid #dfe2e5;
     text-align: left;
     margin: 0;
     padding: 6px 13px;
@@ -243,8 +226,8 @@ table tr td:last-child {
 .md-fences,
 code,
 tt {
-    border: 1px solid #384047;
-    background-color: #384047;
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
     border-radius: 3px;
     padding: 0;
     padding: 2px 4px 0px 4px;
@@ -252,8 +235,8 @@ tt {
 }
 
 code {
-    background-color: #384047;
-    padding: 0 4px 2px 4px;
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
 }
 
 .md-fences {
@@ -283,17 +266,16 @@ code {
 }
 
 .md-fences {
-    background-color: #384047;
-    /* color: aaa; */
+	background-color: #f8f8f8;
 }
 #write pre.md-meta-block {
 	padding: 1rem;
     font-size: 85%;
     line-height: 1.45;
-    background-color: #384047;
+    background-color: #f7f7f7;
     border: 0;
     border-radius: 3px;
-    color: #aaa;
+    color: #777777;
     margin-top: 0 !important;
 }
 
@@ -356,3 +338,36 @@ code {
 }
 
 /** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "San Francisco Display Thin";
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
